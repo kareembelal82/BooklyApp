@@ -27,7 +27,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
         Image.asset(
           AssetsData.logo,
         ),
-        Text(
+        const Text(
           'Bookly',
           style: TextStyle(
               fontSize: 42,
@@ -36,8 +36,8 @@ class _SplashViewBodyState extends State<SplashViewBody> {
               letterSpacing: 10),
         ),
         AnimatedContainer(
-          duration: Duration(seconds: 1),
-          child: Text(
+          duration: const Duration(seconds: 1),
+          child: const Text(
             'Read free books',
             style: TextStyle(fontSize: 18),
           ),
@@ -49,6 +49,6 @@ class _SplashViewBodyState extends State<SplashViewBody> {
 
 void navigateToHome() {
   Timer(kTranstionDuration, () {
-    Get.to(HomeView(), transition: Transition.fadeIn);
+    Get.to(const HomeView(), transition: Transition.fadeIn);
   });
 }
